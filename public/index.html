@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>头条新闻</title>
+    <!--可以让部分国产浏览器默认采用高速模式渲染页面-->
+    <!-- <meta name="renderer" content="webkit" /> -->
+    <meta name="referrer" content="no-referrer" />
+    <!--为了让 IE 浏览器运行最新的渲染模式下-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./favicon.ico">
+    <script>
+      let scale = 1.0 / window.devicePixelRatio
+      let text = `<meta name="viewport" content="width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">`
+      document.write(text)
+      document.documentElement.style.fontSize = window.innerWidth / 7.5 + 'px'
+      document.documentElement.setAttribute('data-dpr',window.devicePixelRatio + '')
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
